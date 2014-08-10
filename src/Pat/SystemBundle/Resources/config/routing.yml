@@ -1,0 +1,13 @@
+pat_system:
+    path:     /
+    defaults: { _controller: PatSystemBundle:Home:index, section: home }
+
+pat_system_products:
+    path:     /produits
+    defaults: { _controller: PatSystemBundle:Product:list, section: product }
+
+pat_system_product:
+    path:     /produit/details/{slug}
+    defaults: { _controller: PatSystemBundle:Product:detail, section: product }
+
+

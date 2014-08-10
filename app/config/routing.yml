@@ -1,0 +1,4 @@
+pat_system:
+    resource: "@PatSystemBundle/Resources/config/routing.yml"
+    prefix:   /
+

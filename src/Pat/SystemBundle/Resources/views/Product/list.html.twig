@@ -1,0 +1,14 @@
+
+{% extends '@PatSystem/layout.html.twig' %}
+
+{% block main %}
+    <h1>{% trans %}Liste des produits{% endtrans %}</h1>
+
+    {% if products %}
+        <ul>
+            {% for product in products %}
+                {% include '@PatSystem/Product/_item.html.twig' %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
